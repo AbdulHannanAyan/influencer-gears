@@ -1,0 +1,223 @@
+/*-------------------
+Fonts
+------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+    background:#F3F1FF ;
+}
+h1{
+    font-size: 50px;
+    font-weight: bold;
+}
+h2{
+    text-align: center;
+}
+.half-width h3{
+    position: absolute;
+    top: 2.63%;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+/* ----------------------------
+first-section 
+------------------------------*/
+
+.first-section{
+    display: flex;
+    margin-top: 150px;
+    justify-content: space-around;
+}
+.half-width{
+    width: 50%;
+    padding-left: 10%;
+    
+}
+.half-width img{
+    width: 90%; 
+}
+.link-button{
+    text-decoration: none;
+    background-color: rgb(194, 25, 25);
+    padding: 10px 40px;
+    color: white;
+    font-weight: 500;
+    border-radius: 20px;
+}
+.first-part h2{
+    margin-top: 300px;
+}
+
+/* ------------------------------------
+second-section 
+--------------------------------------*/
+
+.second-section{
+    margin-bottom:150px ;
+    background: #AAAAAA;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
+}
+.fa-star{
+    font-size: 12px;
+}
+.fa-star.filled{
+    color: #FFC014;
+}
+.fa-star.empty{
+    color: #AEAEAE;
+}
+.flex{
+    position: absolute;
+    width: 329px;
+    height: 476px;
+    left: 196px;
+    top: 1035px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
+.micro{
+    position: absolute;
+    width: 329px;
+    height: 476px;
+    left: 555px;
+    top: 1035px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
+.air{
+    position: absolute;
+    width: 329px;
+    height: 476px;
+    left: 914px;
+    top: 1035px;
+    
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
+.drone{
+    position: absolute;
+    width: 329px;
+    height: 476px;
+    left: 196px;
+    top: 1541px;
+    
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
+.light{
+    position: absolute;
+    width: 329px;
+    height: 476px;
+    left: 555px;
+    top: 1541px;
+    
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+} 
+ .photo{
+    position: absolute;
+width: 329px;
+height: 476px;
+left: 914px;
+top: 1541px;
+
+background: #FFFFFF;
+box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+border-radius: 5px;
+ }
+ .vlog{
+    position: absolute;
+width: 329px;
+height: 476px;
+left: 196px;
+top: 2047px;
+
+background: #FFFFFF;
+box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+border-radius: 5px;
+ }
+ .green{
+    position: absolute;
+width: 329px;
+height: 476px;
+left: 555px;
+top: 2047px;
+
+background: #FFFFFF;
+box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+border-radius: 5px;
+ }
+ .action{
+    position: absolute;
+    width: 329px;
+    height: 476px;
+    left: 914px;
+    top: 2047px;
+    
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+ }
+ .third-section{
+     display:flex ;
+     justify-content: space-around;
+     margin-top:1900px ;
+     margin-bottom: 250px;
+ }
+
+ /*------------------------------
+  footer
+  ----------------------------- */
+
+ .products{
+    background: #0A0826;
+    position: absolute;
+    color: white;
+    width: 1440px;
+    height: 239px;
+ }
+ .copyright{
+     text-align: center;
+ }
+ 
+ /*---------------------
+  Media Queries
+  ----------------------  */
+
+  /* Mobile-device */
+  @media only screen and (max-width:992px) {
+      .container{
+          width: 100%;
+      }
+      .first-section, .second-section, .third-section{
+          grid-template-columns: repeat(1, 1fr);
+      }
+      .products{
+          grid-template-columns: repeat(1, 1fr);
+      }
+
+  }
+
+  /* Tablet-device */
+  @media only screen and (min-width: 688px) and (max-width: 992px) {
+    .container{
+        width: 100%;
+    }
+    .first-section, .second-section, .third-section{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .products{
+        grid-template-columns: repeat(1, 1fr);
+    }
+  }
